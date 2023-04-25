@@ -21,31 +21,31 @@ public class NewEntity {
     private double price;
     private String items;
 
-//    @Autowired
-//    ItemControllers itemControllers;
-//    @Autowired
-//    InvoiceControllers invoiceControllers;
-//    @Autowired
-//    CustomerControllers customerControllers;
-//    @Autowired
-//    MarketControllers marketControllers;
-//
-//    @Autowired
-//    ItemRepositories itemRepositories;
-//    @Autowired
-//    InvoiceRepositories invoiceRepositories;
-//    @Autowired
-//    CustomerRepositories customerRepositories;
-//    @Autowired
-//    MarketRepositories marketRepositories;
-//    @Autowired
-//    ItemServices itemServices;
-//    @Autowired
-//    InvoiceServices invoiceServices;
-//    @Autowired
-//    CustomerServices customerServices;
-//    @Autowired
-//    MarketServices marketServices;
+    @Autowired
+    ItemControllers itemControllers;
+    @Autowired
+    InvoiceControllers invoiceControllers;
+    @Autowired
+    CustomerControllers customerControllers;
+    @Autowired
+    MarketControllers marketControllers;
+
+    @Autowired
+    ItemRepositories itemRepositories;
+    @Autowired
+    InvoiceRepositories invoiceRepositories;
+    @Autowired
+    CustomerRepositories customerRepositories;
+    @Autowired
+    MarketRepositories marketRepositories;
+    @Autowired
+    ItemServices itemServices;
+    @Autowired
+    InvoiceServices invoiceServices;
+    @Autowired
+    CustomerServices customerServices;
+    @Autowired
+    MarketServices marketServices;
 
 
 //    @Id
