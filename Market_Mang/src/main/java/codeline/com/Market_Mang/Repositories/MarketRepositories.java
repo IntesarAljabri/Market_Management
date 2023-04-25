@@ -1,9 +1,7 @@
-package Repositories;
+package codeline.com.Market_Mang.Repositories;
 
-import Models.Market;
+import codeline.com.Market_Mang.Models.Market;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
 
 public interface MarketRepositories extends JpaRepository<Market, Integer> {
 

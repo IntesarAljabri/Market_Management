@@ -1,7 +1,6 @@
-package Controllers;
+package codeline.com.Market_Mang.Controllers;
 
-import Services.CustomerServices;
-import Services.InvoiceServices;
+import codeline.com.Market_Mang.Services.InvoiceServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,7 +17,7 @@ public class InvoiceControllers {
         @RequestMapping(value = "getAll", method = RequestMethod.GET)
         public <Invoice> List<Invoice>  getAllCustomers() {
 
-            return invoiceService.getAllInvoice();
+            return (List<Invoice>) invoiceService.getAllInvoices();
         }
     }
 

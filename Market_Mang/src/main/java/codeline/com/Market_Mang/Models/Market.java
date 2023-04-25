@@ -1,4 +1,4 @@
-package Models;
+package codeline.com.Market_Mang.Models;
 
 import jakarta.persistence.*;
 import lombok.Data;

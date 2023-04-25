@@ -1,7 +1,6 @@
-package Controllers;
+package codeline.com.Market_Mang.Controllers;
 
-import Services.InvoiceServices;
-import Services.ItemServices;
+import codeline.com.Market_Mang.Services.CustomerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,14 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 @RestController
-@RequestMapping("item")
-public class ItemControllers<Items> {
+@RequestMapping("customers")
+public class CustomerControllers {
+
         @Autowired
-        ItemServices itemService;
+        CustomerServices customerService;
 
         @RequestMapping(value = "getAll", method = RequestMethod.GET)
-        public List<Items> getAllItems() {
+        public List getAllCustomers() {
 
-            return itemService.getAllItem();
+            return customerService.getAllCustomers();
         }
-}
+    }
+

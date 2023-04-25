@@ -1,8 +1,7 @@
-package Services;
+package codeline.com.Market_Mang.Services;
 
-import Models.Customer;
-import Repositories.CustomerRepositories;
-import Repositories.MarketRepositories;
+import codeline.com.Market_Mang.Models.Customer;
+import codeline.com.Market_Mang.Repositories.CustomerRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,10 +15,12 @@ public class CustomerServices {
 //            return customerRepositories.findAll();
 //        }
     public List<Customer> getAllCustomers() {
+
         return customerRepositories.findAll();
     }
 
     public Customer getMarketById(Integer id) {
+
         return customerRepositories.findById(id).get();
     }
 
