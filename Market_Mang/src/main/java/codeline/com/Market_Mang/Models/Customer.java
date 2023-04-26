@@ -1,11 +1,14 @@
 package codeline.com.Market_Mang.Models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,5 +26,7 @@ public class Customer {
     @Column(name = "customer_name")
     String name;
 
-
+    @OneToMany(mappedBy = "customer")
+    @JsonIgnore
+    List<Invoice> invoices;
 }
