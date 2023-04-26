@@ -1,10 +1,10 @@
 package codeline.com.Market_Mang.Controllers;
 
+import codeline.com.Market_Mang.Models.Customer;
+import codeline.com.Market_Mang.Models.Invoice;
 import codeline.com.Market_Mang.Services.InvoiceServices;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,5 +19,10 @@ public class InvoiceControllers {
 
             return (List<Invoice>) invoiceService.getAllInvoices();
         }
+    @GetMapping(value = "getById")
+    public Invoice getInvoiceById(@RequestParam Integer id) {
+        return invoiceService.getInvoice(id);
+    }
+
     }
 

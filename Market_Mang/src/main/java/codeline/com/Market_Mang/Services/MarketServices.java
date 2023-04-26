@@ -19,7 +19,7 @@ public class MarketServices {
         return marketRepositories.findAll();
     }
 
-    public Market getMarketById(Integer id) {
+    public Market getMarket(Integer id) {
 
                 return marketRepositories.findById(id).get();
     }

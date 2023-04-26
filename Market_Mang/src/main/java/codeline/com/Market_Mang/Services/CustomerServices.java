@@ -14,12 +14,12 @@ public class CustomerServices {
     //        public List<Customer> getAllCustomers() {
 //            return customerRepositories.findAll();
 //        }
-    public List<Customer> getAllCustomers() {
+    public List<Customer> getAllCustomer() {
 
         return customerRepositories.findAll();
     }
 
-    public Customer getMarketById(Integer id) {
+    public Customer getCustomer(Integer id) {
 
         return customerRepositories.findById(id).get();
     }

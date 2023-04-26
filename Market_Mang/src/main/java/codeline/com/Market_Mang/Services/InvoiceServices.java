@@ -12,16 +12,11 @@ public class InvoiceServices {
 
     @Autowired
     InvoiceRepositories invoiceRepositories;
-
-    //        public List<Invoice> getAllInvoices() {
-//            return invoiceRepositories.findAll();
-//        }
     public List<Invoice> getAllInvoices() {
 
         return invoiceRepositories.findAll();
     }
-
-    public Invoice getMarketById(Integer id) {
+    public Invoice getInvoice(Integer id) {
 
         return invoiceRepositories.findById(id).get();
     }
